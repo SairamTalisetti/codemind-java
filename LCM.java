@@ -1,24 +1,27 @@
 import java.util.*;
-class mina
+class main
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int a,b,lcm,min;
+        int a,b,max,lcm;
         a=sc.nextInt();
         b=sc.nextInt();
-        if(a<b)
-        min=a;
+        if(a>b)
+        max=a;
         else
-        min=b;
-        for(int i=min;;i++)
+        max=b;
+        for(int i=max;;i++)
         {
             if(i%a==0 && i%b==0)
             {
-                lcm=i;
-                break;
+            lcm=i;
+            break;
             }
+            
         }
         System.out.println(lcm);
     }
+        
+        
 }
