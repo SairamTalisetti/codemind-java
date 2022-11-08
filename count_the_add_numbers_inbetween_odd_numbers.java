@@ -1,23 +1,25 @@
-import java.util.Scanner;
-class odd
+import java.util.*;
+class main
 {
     public static void main(String args[])
-    { 
+    {
         Scanner sc=new Scanner(System.in);
-        int n,c=0;
+        int n,x[],count=0;
         n=sc.nextInt();
-        int a[]=new int[n];
-        for(int i=0;i<n;i++)
+        x=new int[n];
+        for(int i=0; i<n; i++)
         {
-            a[i]=sc.nextInt();
+            x[i]=sc.nextInt();
         }
-        for(int i=1;i<n-1;i++)
-        { 
-            if(a[i-1]%2==1 && a[i]%2==1 && a[i+1]%2==1)
-            { 
-                c++;
+        for(int i=1; i<n-1; i++)
+        {
+            if(x[i-1]%2==1 && x[i]%2==1 && x[i+1]%2==1)
+            {
+            count++;
             }
-        } 
-        System.out.println(c);
+        }
+        System.out.println(count);
     }
+        
+
 }
