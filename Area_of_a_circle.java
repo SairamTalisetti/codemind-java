@@ -1,13 +1,13 @@
 import java.util.*;
-class main
+public class Main
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,r;
+        int r;
         double area;
-        n=sc.nextInt();
-        area=3.14*n*n;
+        r=sc.nextInt();
+        area=3.14*r*r;
         System.out.format("%.2f",area);
     }
 }
